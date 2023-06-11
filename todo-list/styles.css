@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #242424;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.container h2 {
+    display: flex;
+    gap: 20px;
+    color: #242424;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container img {
+    height: 40px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    background: #EDEEF0;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: #EDEEF0;
+    padding: 10px 10px 10px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #FF5945;
+    color: #FFF;
+    font-size: 16PX;
+    cursor: pointer;
+    border-radius: 40PX;
+}
+
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: 10px;
+    left: 8px;
+    border: 1px solid #d7d7d7;
+}
+
+ul li.done {
+    color: #7b7b7b;
+    text-decoration: line-through;
+}
+
+ul li.done::before {
+    background: #FF5945;
+}
+
+ul li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+ul li span:hover {
+    background-color: #EDEEF0;
+}
